@@ -1,0 +1,36 @@
+*{
+    margin: 10;
+    padding: auto;
+    background-color: wheat;
+    font-size: 30px;
+}
+body{
+    
+}
+.head{
+    color:crimson;
+    text-align: center;
+}
+.show{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 30px;
+    background-color: azure;
+    width: 75%;
+    height: 250px;
+}
+.confidence{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 30px;
+
+    background-color: rgb(182, 93, 171);
+    width: 90%;
+    height: 250px;
+}
+canvas {
+    max-width: 85%; 
+     
+}   

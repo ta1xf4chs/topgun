@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.head {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-top: 20px; /* เพิ่มระยะห่างจากด้านบน */
+  text-align: left; /* จัดให้ปุ่มอยู่ทางซ้าย */
+  margin-left: 20px; /* เพิ่มระยะห่างจากขอบซ้าย */
+  width: 35%;
+}
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.controls button:hover {
+  background-color: #45a049;
+  
+}
+
+.playback {
+  padding: 12px;
+  padding-top: 0%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 35%; /* ความกว้างที่ตั้งไว้สำหรับ playback */
+  position: absolute; /* ใช้ position absolute */
+  right: 20px; /* ระยะห่างจากขอบขวา */
+  height: 294px; /* ตั้งความสูงของส่วนนี้ */
+  overflow-y: auto; /* เพิ่มการเลื่อนในแนวตั้ง */
+}
+
+.playback h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  
+}
+
+.playback div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.playback p {
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.content-container {
+  display: flex; /* ใช้ flex เพื่อจัดเรียง .canvas-container และ .playback */
+  justify-content: flex-start; /* ชิดซ้าย */
+}
+
+.canvas-container {
+  width: 60%; /* ความกว้าง 60% ของ container */
+}
+
+canvas {
+  width: 100%; /* ตั้งให้ canvas กว้างเต็มที่ตามขนาดของ .canvas-container */
+  height: 250px; /* หรือปรับตามความต้องการ */
+  border: 1px solid black;
+}
+
+.playback {
+  margin-left: auto; /* ช่วยให้ .playback ชิดขวา */
+}
